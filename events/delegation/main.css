@@ -1,0 +1,66 @@
+body {
+
+
+
+	}
+
+.container {
+	width: 464px;
+	margin: 0 auto;
+
+
+}
+
+
+img {
+	padding-left: 110px;
+}
+button.accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 464px;
+	border: none;
+	transition: 0.4s;
+	border-radius: 18px;
+	margin-bottom: 10px;
+	color: #fff;
+	font-size: 15px;
+	
+}
+
+ button.accordion:hover {
+	background-color: #ddd;
+}
+
+button.accordion.active {
+	background-color: #fe8663;
+}
+
+.panel {
+	padding: 0 18px;
+	background-color: #e7e7e7;
+	display: none;
+}
+
+.panel.show {
+	display: block;
+	margin-top: -27px;
+	margin-bottom: 13px;
+	border-radius: 12px;
+	padding: 10px 0;
+}
+
+.accordion.darkgrey {
+	background-color: #696666;
+	color: #fff;
+}
+
+.accordion.fontblack {
+	color: #595959;
+}
+
+p {
+	padding-left: 22px;
+}

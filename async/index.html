@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Async</title>
+</head>
+<body>
+	<script>
+		
+		function timer(time) {
+	return new Promise((res,req) => {
+		setTimeout(res,time)
+	})
+};
+	
+timer(4000).then(() => {
+		console.log("ok");
+	});
+	</script>
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,149 @@
+.app__bg {
+    height: 900px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.app__wrap {
+    width: 630px;
+    height: 492px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.app__header {
+    width: 100%;
+    height: 46px;
+    background-color: #ff8663;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.app__header__heading {
+    margin: 0 0 0 20px;
+    line-height: 43px;
+    float: left;
+    color: #fff;
+}
+
+.app__header__close {
+    float: right;
+    padding: 14px 16px 0 0;
+}
+
+.app__search__section {
+    height: 45px;
+    background-color: #f0f0f0;
+}
+
+.app__search__field {
+    width: 260px;
+    height: 27px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 0 0 0 27px;
+    background: url('./img/search.png')9px 6px no-repeat;
+    background-color: #fff;
+}
+
+.app__search__field:first-child {
+    margin: 10px 0 0 16px;
+}
+
+.app__search__field:last-child {
+    margin: 10px 16px 0 20px;
+}
+
+.app__lists__wrap {
+    display: flex;
+    height: 356px;
+}
+
+.app__list__wrap {
+    border-right: 1px solid #f0f0f0;
+    order: 1;
+    width: 50%;
+    overflow: hidden;
+}
+
+.app__list {
+    margin: 0 15px 0 15px;
+    padding: 0;
+    list-style-type: none;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.app__list__item {
+    height: 60px;
+    width: 100%;
+    position: relative;
+}
+.app__list__item:last-child {
+	margin: 0 0 38px 0;
+}
+
+.app__list__heading {
+    margin: 14px 0 0 15px;
+    padding: 0 0 7px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.app__list__item__photo {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin: 9px 9px 7px 5px;
+}
+
+.app__list__item__text {
+    display: inline-block;
+    top: 13px;
+    width: 110px;
+    font-size: 12px;
+    position: absolute;
+}
+
+.app__list__item__add {
+    float: right;
+    margin: 22px 7px;
+}
+
+.app__sorted__list__wrap {
+    width: 50%;
+    display: inline-block;
+    order: 2;
+}
+
+.app__sorted__list__heading {
+    margin: 14px 0 0 15px;
+}
+
+.app__sorted__list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.app__footer {
+    height: 47px;
+    background-color: #f0f0f0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    position: relative;
+}
+
+.app__footer__save__btn {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    padding: 6px 9px;
+    background-color: #ff8663;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FRIEND FILTER</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
+    <title>Friend Filter</title>
+</head>
+
+<body>
+    <div class="app__bg">
+        <div class="app__wrap">
+            <div class="app__header">
+                <h3 class="app__header__heading">Выберите друзей</h3>
+                <img src="img/close__white.png" alt="" class="app__header__close">
+            </div>
+            <div class="app__search__section">
+                <input type="text" class="app__search__field" id="friendsInput" placeholder="Начните вводить имя друга">
+                <input type="text" class="app__search__field" placeholder="Начните вводить имя друга">
+            </div>
+            <div class="app__lists__wrap">
+                <div class="app__list__wrap">
+                    <h5 class="app__list__heading">Ваши друзья</h5>
+                    <ul class="app__list" id="appListBlock"></ul>
+                </div>
+                <div class="app__sorted__list__wrap">
+                    <h5 class="app__sorted__list__heading">Друзья в списке</h5>
+                    <ul class="app__sorted__list">
+                        <li class="app__list__item">
+                            <img src="" alt="" class="app__list__item__photo">
+                            <p class="app__list__item__text">FirstName LastName</p> <img src="img/close__grey.png" alt="" class="app__list__item__add">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="app__footer">
+                <div class="app__footer__save__btn">Сохранить</div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script type="text/x-handlebars-template" id="friendsList">
+        
+        {{#each item}}
+            <li class="app__list__item">
+                <img src="{{photo_100}}" alt="" class="app__list__item__photo">
+                <p class="app__list__item__text">{{first_name}} {{last_name}}</p> <img src="img/add__btn.png" alt="" class="app__list__item__add">
+            </li>
+            {{/each}}
+        
+    </script>
+</body>
+
+</html>

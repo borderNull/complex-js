@@ -65,3 +65,95 @@ friendsInput.addEventListener('input', () => {
     }
 
 });
+
+
+let itemAdd = document.getElementsByClassName('app__list__item__add')[0];
+
+console.log(itemAdd);
+
+itemAdd.addEventListener('click', function(e) {
+
+     console.log(e.target.parentNode);
+
+ });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+
+
+// var dragObject = {};
+
+// document.onmousedown = function(e) {
+
+//     if (e.which != 1) { // если клик правой кнопкой мыши
+//         return; // то он не запускает перенос
+//     }
+
+//     var elem = e.target.closest('.app__list__item');
+
+//     if (!elem) return; // не нашли, клик вне draggable-объекта
+
+//     // запомнить переносимый объект
+//     dragObject.elem = elem;
+
+//     // запомнить координаты, с которых начат перенос объекта
+//     dragObject.downX = e.pageX;
+//     dragObject.downY = e.pageY;
+//     console.log(elem);
+// }
+
+// document.onmousemove = function(e) {
+
+//     if (!dragObject.elem) return;
+
+//     if (dragObject.elem) {
+//         var moveX = e.pageX - dragObject.downX;
+//         var moveY = e.pageY - dragObject.downY;
+
+//         var coords = getCoords(dragObject.elem);
+
+//         dragObject.shiftX = dragObject.downX - coords.left;
+//         dragObject.shiftY = dragObject.downY - coords.top;
+
+//         startDrag(e);
+
+//     }
+//     dragObject.elem.style.left = e.pageX - dragObject.shiftX + 'px';
+//     dragObject.elem.style.top = e.pageY - dragObject.shiftY + 'px';
+
+//     return false;
+// }
+
+// function startDrag(e) {
+//   var dragged = dragObject.elem;
+
+//   dragged.style.zIndex = 9999;
+//   dragged.style.position = 'absolute';
+// }
+
+
+   
+   // arrAdd.forEach(function(elem) {
+   //  console.log(elem)
+   // });
+
+   // console.log(arrAdd)
+
+
+ 

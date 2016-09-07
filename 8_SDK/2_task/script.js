@@ -41,7 +41,7 @@ new Promise(resolve => {
                 let nowDate = new Date();
  
                 
-                let myDate = {
+                let myDate = { 
                     day: nowDate.getDate(),
                     month: nowDate.getMonth() + 1,
                     year: nowDate.getFullYear()
@@ -120,3 +120,5 @@ new Promise(resolve => {
 }).catch(function(e) {
     console.log('Ошибка: ' + e.message);
 });
+
+

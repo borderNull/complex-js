@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>BOM</title>
+    <meta charset="UTF-8">
+    <title>BOM</title>
 </head>
+
 <body>
-	
+    <script>
+    let cookie1 = 'city=spb';
+    let cookie2 = 'place=island';
+    document.cookie = cookie1;
+    document.cookie = cookie2;
+    let tab = document.createElement('table');
+    let tr = document.createElement('tr');
+    let td = document.createElement('td');
 
-	<script>
-	document.cookie = 'city=spb';
-	document.cookie = 'land=island';
-		let tab = document.createElement('table');
-		let tr = document.createElement('tr');
-		let td = document.createElement('td');
 
-        document.body.appendChild(tab);
-        tab.appendChild(tr);
-        tr.appendChild(td);
-
-	</script>
+    document.body.appendChild(tab);
+    tab.appendChild(tr);
+    tr.appendChild(td);
+    td.innerHTML = wejldkjfs;
+    </script>
 </body>
+
 </html>

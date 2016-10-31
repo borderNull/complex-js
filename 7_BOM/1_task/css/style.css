@@ -1,0 +1,26 @@
+
+.cookie__heading {
+	margin: 10% 0 5%;
+}
+
+.cookie__table {
+	margin: auto;
+	width: 50%;
+	border: 1px solid #eee;
+}
+
+.cookie__head {
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #eee;
+}
+
+tr {
+	text-align: center;
+	height: 55px;
+	border-bottom: 1px solid #eee;
+}
+
+td {
+	border-right: 1px solid #eee;
+}

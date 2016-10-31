@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BOM</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-8">
+            <h1 class="cookie__heading">Выберите cookie которые вы хотите удалить и нажмите на кнопку</h1>
+            <table class="cookie__table">
+                <tr class="table__row">
+                    <th class="cookie__head">Имя</th>
+                    <th class="cookie__head">Значение</th>
+                    <th class="cookie__head">Кнопка</th>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-4">
+            <h1 class="form__heading">Добавить cookie</h1>
+            <form action="#" class="cookie__form" id="addForm">
+                <input type="text" class="form__input" id='setCookieName' placeholder="Имя">
+                <input type="text" class="form__input" id='setCookieVal' placeholder="Значение">
+                <input type="text" class="form__input" id='setExpireDate' placeholder="Количество дней">
+                <button class="form__btn btn btn-success" id="addBtn">Добавить</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

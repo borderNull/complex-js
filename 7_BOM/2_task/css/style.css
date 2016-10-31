@@ -1,0 +1,47 @@
+
+.cookie__heading {
+	text-align: center;
+	margin: 50px 0 30px;
+}
+
+.cookie__table {
+	margin: auto;
+	width: 50%;
+	border: 1px solid #eee;
+}
+
+.cookie__head {
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #eee;
+}
+
+tr {
+	text-align: center;
+	height: 55px;
+	border-bottom: 1px solid #eee;
+}
+
+td {
+	border-right: 1px solid #eee;
+}
+
+.form__heading {
+	text-align: center;
+	margin: 50px 0 50px;
+	font-size: 36px;
+}
+
+.form__input {
+	display: block;
+	margin: 0 auto 10px;
+	padding: 0 0 0 10px;
+	border-radius: 5px;
+	height: 30px;
+	outline: none;
+}
+
+.form__btn {
+	display: block;
+	margin: auto;
+}

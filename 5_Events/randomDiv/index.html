@@ -3,109 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Random div</title>
-    <style>
-    #createDiv {
-        border: 1px solid #df0909;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 50%;
-        font-size: 12px;
-        font-family: arial, helvetica, sans-serif;
-        padding: 10px 10px 10px 10px;
-        width: 100px;
-        height: 100px;
-        text-transform: uppercase;
-        text-decoration: none;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        display: inline-block;
-        text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-        outline: none;
-        font-weight: bold;
-        color: #FFFFFF;
-        cursor: pointer;
-        background-color: #F62B2B;
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#F62B2B), to(#D20202));
-        background-image: -webkit-linear-gradient(top, #F62B2B, #D20202);
-        background-image: -moz-linear-gradient(top, #F62B2B, #D20202);
-        background-image: -ms-linear-gradient(top, #F62B2B, #D20202);
-        background-image: -o-linear-gradient(top, #F62B2B, #D20202);
-        background-image: linear-gradient(to bottom, #F62B2B, #D20202);
-        filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#F62B2B, endColorstr=#D20202);
-    }
-    
-    #createDiv:hover {
-        border: 1px solid #b30808;
-        background-color: #e40a0a;
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#e40a0a), to(#9f0202));
-        background-image: -webkit-linear-gradient(top, #e40a0a, #9f0202);
-        background-image: -moz-linear-gradient(top, #e40a0a, #9f0202);
-        background-image: -ms-linear-gradient(top, #e40a0a, #9f0202);
-        background-image: -o-linear-gradient(top, #e40a0a, #9f0202);
-        background-image: linear-gradient(to bottom, #e40a0a, #9f0202);
-        filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e40a0a, endColorstr=#9f0202);
-    }
-    
-    iframe {
-        width: 95%;
-        height: 95%;
-        margin: 10px;
-    }
-    </style>
+    <title>Generate random div's</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
+    <div id="main"></div>
     <button id="createDiv">Push the tempo</button>
-    <script>
-    var newDiv = document.createElement('div');
-    let newFrame = document.createElement('iframe');
-    newFrame.setAttribute('src', 'https://www.youtube.com/embed/so9DBHCo64Q?autoplay=1&amp;showinfo=0&amp;controls=0');
-
-
-    let makeDiv = (e) => {
-        let div = document.createElement('div');
-        let css = newDiv.style;
-        let divsize = ((Math.random() * 100) + 500).toFixed();
-        let color = '#' + Math.round(0xffffff * Math.random()).toString(16);
-
-
-        css.position = 'absolute';
-        css.top = (Math.floor(Math.random() * window.innerHeight)) + 'px';
-        css.left = (Math.floor(Math.random() * window.innerWidth)) + 'px';
-        css.width = divsize + 'px';
-        css.height = divsize + 'px';
-        css.backgroundColor = color;
-        newDiv.setAttribute('id', 'newDiv');
-        document.body.appendChild(newDiv);
-    };
-    var activeElement;
-    var offsetX = 0;
-    var offsetY = 0;
-
-    let mDown = (e) => {
-
-        activeElement = e.target;
-        offsetX = e.offsetX;
-        offsetY = e.offsetY;
-    };
-    let mUp = (e) => {
-        activeElement = null;
-    };
-    let mMove = (e) => {
-        if (activeElement) {
-            activeElement.style.top = (e.clientY - offsetY) + 'px';
-            activeElement.style.left = (e.clientX - offsetX) + 'px';
-        }
-    };
-    newDiv.appendChild(newFrame);
-    createDiv.addEventListener('click', makeDiv);
-    newDiv.addEventListener('mousedown', mDown);
-    newDiv.addEventListener('mouseup', mUp);
-    document.addEventListener('mousemove', mMove);
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>

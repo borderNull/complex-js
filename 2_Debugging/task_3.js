@@ -39,7 +39,7 @@ var calculator = (function(firstNumber) {
 
 var myCalculator = calculator(200);
 
-console.log('Третье ДЗ >>>');
+console.log("Третье задание ===>");
 console.log(myCalculator.sum(1, 2, 3)); //вернет 206
 console.log(myCalculator.dif(10, 20)); //вернет 170
 console.log(myCalculator.div(2, 2)); //вернет 50

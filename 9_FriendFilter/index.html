@@ -43,14 +43,12 @@
     </div>
     <script src="main.js"></script>
     <script type="text/x-handlebars-template" id="friendsList">
-        
         {{#each item}}
-            <li class="app__list__item">
-                <img src="{{photo_100}}" alt="" class="app__list__item__photo">
-                <p class="app__list__item__text">{{first_name}} {{last_name}}</p> <img src="img/add__btn.png" alt="" class="app__list__item__add">
-            </li>
-            {{/each}}
-        
+        <li class="app__list__item">
+            <img src="{{photo_100}}" alt="" class="app__list__item__photo">
+            <p class="app__list__item__text">{{first_name}} {{last_name}}</p> <img src="img/add__btn.png" alt="" class="app__list__item__add">
+        </li>
+        {{/each}}
     </script>
 </body>
 

@@ -95,8 +95,4 @@ addBtn.addEventListener('click', function() {
 
     addForm.reset();
 
-
-
-
-
 });
